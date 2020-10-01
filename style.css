@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  
+   /* background-image: linear-gradient(360deg,#0629ee, #293df8);*/
+    background-image: url(a.jpg);
+    background-size:cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menu-bar{
+    background-image: linear-gradient(120deg,#1d06ee, #020d74) ;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style:none;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+.active,.menu-bar ul li:hover{
+    background: #1c58da;
+    border-radius: 50px;
+}
+.menu-bar .fa
+{
+    margin-right: 8px; 
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(120deg , #0a21f3,#0a024d);
+    margin-top:15px;
+    border-radius: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+  display: block;
+  margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+ width:150px;
+}
+.one
+{
+    height: auto;
+    color: rgba(2, 2, 63, 0.753);
+    
+}
+.one, #er
+{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:100;
+    font-size:2em;   
+}
+#er:hover
+{
+    color:rgba(15, 42, 179, 0.774);
+}
+.one #box{
+    width: 20rem;
+    height: 12rem;
+    border: .2rem solid #024175;
+    border-radius:.2rem;
+    position: absolute;
+    z-index:9;
+    box-shadow: 2px 4px 18px rgba(17, 240, 166, 0.322);
+    transition: border-color .2s box-shadow .2s;
+}
+#box #boxzone
+{
+    border-color: rgba(3, 9, 41, 0.849);
+    box-shadow: 93px 6px 24px rgba(0,0,0,.5);
+}
+.slideshow-container {
+    width: 800px;
+    height: 550px;
+    position: relative;
+    margin:250px 380px;
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -32px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover 
+  {
+    background-color: rgba(43, 42, 42, 0.8);
+  }
+  /* Caption text */
+  .text 
+  {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  /* Number text (1/3 etc) */
+  .numbertext 
+  {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+ .container
+ {
+     width:90%;
+     height: 210%;;
+     margin:50px auto;
+ }
+ .heading
+ {
+     text-align:center;
+     font-size: 20px;
+     margin-bottom:50px;
+ }
+ .row
+ {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+ .card
+ {
+     width:20%;
+     height:auto;
+     background:linear-gradient(to right,#0b23f5, #2c41fc);
+     border:2px solid rgb(5, 86, 236);
+     border-radius: 50px;
+     margin-bottom: 50px;
+     transition: 0.3s;
+ }
+ .card:hover{
+    background:linear-gradient(to right,#0b23f5, #2c41fc);
+ }
+ .card-header
+ {
+     text-align:center;
+     padding: 50px 10px;
+     background:linear-gradient(to right,#0b23f5, #2c41fc);
+     border-radius:50px;
+     color:#fff;
+ }
+ 
+ .card-body{
+     padding:30px 20px;
+     border-radius: 50px;
+     text-align: center;
+     font-size: 18px;
+     background:rgb(124, 222, 252);
+ }
+ .card-body .btn{
+     display: block;
+     color:#fff;
+     text-align:center;
+     background:linear-gradient(to right,#1d06ee, #2d41f7);
+     border-radius:80px;
+     margin-top:30px;
+     text-decoration: none;
+    padding:10px 5px;
+ }
+ .card-body .btn:hover{
+    background:linear-gradient(to right , #2d41f7,#1d06ee);
+ }
+ .card:hover
+ {
+     transform: scale(1.05);
+     box-shadow: 0 0 40px -10px rgba(22, 0, 82, 0.432);
+}
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(2, 3, 78);
+    color: white;
+}
